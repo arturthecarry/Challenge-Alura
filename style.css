@@ -8,6 +8,12 @@
     --fonte-primaria: 'Inter', 'sans-serif';
     --cor-branca: #ffffff;
     --cor-vermelha: #8E2424;
+    --cor-cinza-escuro: #101828;
+    --cor-cinza-claro: #667085;
+    --cor-de-fundo: #C31919;
+    --cor-defundo-rodape: rgba(249, 250, 251, 1);
+    ;
+
 
 }
 
@@ -37,15 +43,15 @@
 }
 
 .cabecalho__menu__direcionamento {
-   display: flex;
-   gap: 32px
+    display: flex;
+    gap: 32px
 
 }
 
 .cabecalho__menu__direcionamento__link {
     text-decoration: none;
-    color: black;
-    font-size: ;
+    color: var(--cor-cinza-claro);
+    font-size: 16px;
     font-weight: 500;
     font-size: 16px;
 }
@@ -77,7 +83,289 @@
     font-family: var(--fonte-primaria);
     font-weight: 500;
     font-size: 16px;
-     
+}
 
+.about__nos {
+padding: 10% 25%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+gap: 2em;
+font-family: 'Inter', 'sans-serif';
+}
+
+.about__nos__sobre {
+    font-weight: 600;
+    color: var(--cor-vermelha);
+    font-size: 1em;
+}
+
+.about__nos__porque {
+    color: var(--cor-cinza-escuro);
+    font-weight: 600;
+    font-size: 3em;
+}
+
+.about__nos__fazemos {
+    color: var(--cor-cinza-claro);
+    text-align: center;
+    font-weight: 400;
+    font-size: 1,5em;
 
 }
+
+.conquistas {
+    font-family: var(--fonte-primaria);
+    padding: 0em 9em;
+    display: flex;
+    justify-content: space-between;    
+
+}
+
+.conquistas__bloco {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0em 2em;
+    
+}
+
+.conquistas__bloco__titulo {
+    color: var(--cor-vermelha);
+    font-weight: 600;
+    font-size: 4em;
+}
+
+.conquistas__bloco__subtitulo {
+    color: var(--cor-cinza-escuro);
+    font-weight: 500;
+    font-size: 1,5em;
+}
+
+.conquistas__bloco__paragrafo {
+    color: var(--cor-cinza-claro);
+    font-weight: 400;
+    font-size: 1em;
+}
+.container__vagas {
+    align-items: center;
+    display: flex;
+    gap: 6em;
+    justify-content: center;
+    flex-direction: column;
+}
+.vagas {
+    font-family: var(--fonte-primaria);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 6em 7em 1em 7em;
+
+}
+
+.vagas__anuncio {
+    color: var(--cor-vermelha);
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.vagas__titulo {
+    font-weight: 600;
+    font-size: 2em;
+    color: var(--cor-cinza-escuro);
+}
+
+.vagas__explicaçao {
+    font-weight: 400;
+    font-size: 1,25em;
+    color: var(--cor-cinza-claro);
+}
+
+
+.descricao {
+    padding: 4em 5em 6em 21em;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 2em;
+    font-family: var(--fonte-primaria);
+    
+}
+
+.descricao__titulo {
+    font-weight: 500;
+    color: var(--cor-cinza-escuro);
+    font-size: 1,25em;
+}
+
+.descricao__container {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 2em 30em 2em 5em;
+    margin: 0em 5em;
+    border: solid 1px var(--cor-cinza-claro);
+    border-radius: 1em;
+   
+    
+   
+}
+
+.descricao__anuncio {
+    font-weight: 500;
+    font-size: 1em;
+    color: var(--cor-cinza-escuro);
+}
+
+
+.descricao__descricao {
+    font-weight: 500;
+    font-size: 1em;
+    color: var(--cor-cinza-claro);
+
+}
+
+.feedback {
+    padding: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    flex-direction: column;
+    margin: 7em;
+    font-family: var(--fonte-primaria);
+    background-color: rgba(195, 25, 25, 0.03)
+    
+}
+
+.feedback__veja {
+    color: var(--cor-vermelha);
+    font-weight: 600;
+    font-size: 1em;
+    align-items: center;
+}
+
+.feedback__empresa {
+    color: var(--cor-cinza-escuro);
+    font-weight: 500;
+    font-size: 2em;
+    text-align: center;
+}
+
+.feedback__desenvolvedora {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.feedback__dev {
+    color: var(--cor-cinza-escuro);
+    font-weight: 500;
+    font-size: 1em;
+
+}
+
+.feedback__dev__descricao {
+    color: var(--cor-cinza-claro);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fonte-primaria);
+    background-color: var(--cor-defundo-rodape);
+    padding: 6em 18em;
+    gap: 2em;
+}
+
+.rodape__titulo {
+    font-weight: 600;
+    font-size: 2.25em;
+}
+
+.rodape__anuncio {
+    font-weight: 400;
+    font-size: 1,25em;
+    color: var(--cor-cinza-claro);
+}
+
+.rodape__campo {
+    padding: 0.75em 12em 0.75em 1em;
+    border-radius: 0.5em;
+    border: 1px solid var(--cor-cinza-claro);
+       
+}
+
+.rodape__botao {
+    background-color: var(--cor-vermelha);
+    padding: 0.75em 1.25em;
+    border: 1px;
+    border-radius: 8px;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 1em;
+    color: var(--cor-branca);
+}
+
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 10%;
+      
+       
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .about {
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .conquistas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .descricao {
+        flex-direction: column;
+        align-items: center;
+        padding: 4em 5em 6em 4em;
+     
+    }
+    
+    .descricao__container {
+        padding: 2em 2em 2em 5em;
+    }
+    
+    .vagas__imagem {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .rodape {
+        align-items: center;
+        text-align: center;
+        padding: 6em 6em;
+
+    }
+}
+
